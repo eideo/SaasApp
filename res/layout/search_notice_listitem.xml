@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/padding20"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:lines="1"/>
+    <TextView
+        android:id="@+id/search_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/gray1"
+        android:ellipsize = "end"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/search_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/time_title"
+        android:lines="1"/>
+	
+</LinearLayout>

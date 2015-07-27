@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/azure" >
+
+        <Button
+            android:id="@+id/myself_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/common_return"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myself_center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/cancellation"
+            android:text="@string/common_logout"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.saasapp.tools.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/myself_accounts"
+                    style="@style/ui_me"
+                    android:drawableLeft="@drawable/myself_accounts"
+                    android:text="@string/myself_accounts" />
+
+                <TextView
+                    android:id="@+id/myself_info"
+                    style="@style/ui_me"
+                    android:drawableLeft="@drawable/myself_info"
+                    android:text="@string/myself_info" />
+
+                <TextView
+                    android:id="@+id/myself_hospital"
+                    style="@style/ui_me"
+                    android:drawableLeft="@drawable/myself_hospital"
+                    android:text="@string/myself_hospital" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@drawable/index_menu_item_line" />
+
+                <LinearLayout
+                    style="@style/padding20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/myself_reset_password"
+                        style="@style/padding10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_white_gray"
+                        android:drawableLeft="@drawable/myself_reset_password"
+                        android:text="@string/myself_reset_password"
+                        android:textColor="@color/blue" />
+
+                    <Button
+                        android:id="@+id/myself_change_info"
+                        style="@style/padding10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_white_gray"
+                        android:drawableLeft="@drawable/myself_change_info"
+                        android:text="@string/myself_change_info"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/myself_reg_record"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_reg_record"
+                    android:text="@string/myself_reg_record"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/myself_book_record"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_book_record"
+                    android:text="@string/myself_book_record"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/myself_pay_record"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_pay_record"
+                    android:text="@string/myself_pay_record"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/myself_deposit_record"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_deposit_record"
+                    android:text="@string/myself_deposit_record"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/myself_doc"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_doc"
+                    android:text="@string/myself_doc"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/myself_report"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_report"
+                    android:text="@string/myself_report"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/myself_setting"
+                    style="@style/padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_white_gray2"
+                    android:drawableLeft="@drawable/myself_setting"
+                    android:text="@string/myself_setting"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.saasapp.tools.ReboundScrollView>
+
+</LinearLayout>

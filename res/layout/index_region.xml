@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/azure" >
+
+        <Button
+            android:id="@+id/region_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/common_return"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_region"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000" />
+    </RelativeLayout>
+    <!-- 显示医院信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/small" />
+
+        <TextView
+            android:id="@+id/region_hosname"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:lines="1"
+            android:textColor="@color/blue"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/region_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dip"
+            android:layout_weight="0.6"
+            android:background="@drawable/my_white_gray2"
+            android:text="@string/common_confirm"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/gray"
+        android:lines="1"
+        android:padding="10dip"
+        android:text="@string/select_region"
+        android:textSize="15sp" />
+
+    <TableLayout
+        android:id="@+id/region_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TableLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/gray"
+        android:lines="1"
+        android:padding="10dip"
+        android:text="@string/select_hospital"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/hospital_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

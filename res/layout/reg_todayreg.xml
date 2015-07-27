@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/azure" >
+
+        <Button
+            android:id="@+id/todayreg_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/common_return"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/index_reg_today"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+    <com.saasapp.tools.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			<AutoCompleteTextView 
+			    android:id="@+id/todayreg_autocomplete"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="10dp"
+			    android:background="@drawable/my_editview"
+                android:drawableLeft="@drawable/seek"
+                android:hint="@string/todayreg_hint"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/todayreg_selectdept"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/my_white_gray2"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/todayreg_selectdept"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/todayreg_mydoc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/my_white_gray2"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/todayreg_mydoc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/hint"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/todayreg_prompt"
+                android:textColor="@color/gray1"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.saasapp.tools.ReboundScrollView>
+
+</LinearLayout>

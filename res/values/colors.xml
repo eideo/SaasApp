@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <color name="yin">#BCBBBB</color>
+    <color name="yellow">#F79307</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- 蓝色(医院名字体) -->
+    <color name="blue">#009BD3</color>	
+    <color name="green">#66cc00</color>
+    <color name="orange">#ff9900</color>
+    <color name="gray">#EDECE9</color>
+    <!-- 蓝色(标题背景) -->
+    <color name="azure">#0099FF</color>
+    <!-- 灰色(控件字体背景) -->
+    <color name="gray1">#AAAAAA</color>
+</resources>

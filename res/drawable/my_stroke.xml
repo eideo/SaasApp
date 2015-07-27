@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 初始显示 -->
+    <item> 
+        <layer-list>
+            <item android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp">
+                <shape android:shape="rectangle">
+                    <stroke android:width="5dp" android:endColor="#cccccc" android:startColor="#666666" />
+                    <gradient android:angle="90" />
+                </shape>
+            </item>
+        </layer-list>
+    </item> 
+</selector>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/ui_frame_toolbar_bg"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/mainTabs_radio_home"
+                    style="@style/mainTabs_radio"
+                    android:layout_weight="0.25"
+                    android:button="@null"
+                    android:drawableTop="@drawable/frame_index_btn"
+                    android:text="@string/home"
+                    android:textColor="@drawable/frame_text_color"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/mainTabs_radio_search"
+                    style="@style/mainTabs_radio"
+                    android:layout_weight="0.25"
+                    android:button="@null"
+                    android:drawableTop="@drawable/frame_search_btn"
+                    android:text="@string/search"
+                    android:textColor="@drawable/frame_text_color"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/mainTabs_radio_selfInfo"
+                    style="@style/mainTabs_radio"
+                    android:layout_weight="0.25"
+                    android:button="@null"
+                    android:drawableTop="@drawable/frame_me_btn"
+                    android:text="@string/me"
+                    android:textColor="@drawable/frame_text_color"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/mainTabs_radio_help"
+                    style="@style/mainTabs_radio"
+                    android:layout_weight="0.25"
+                    android:button="@null"
+                    android:drawableTop="@drawable/frame_help_btn"
+                    android:text="@string/help"
+                    android:textColor="@drawable/frame_text_color"
+                    android:textSize="12sp" />
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

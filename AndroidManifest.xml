@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saasapp.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 使用SDK版本和设置安装最小SDK版本 -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+    <!-- 权限配置 -->
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 手机信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 改变wifi状态权限 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!-- 读取短信权限 
+    <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- 读取wifi状态权限 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- android锁机制,场景:不进去休眠状态
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <!-- 启动监听(类似windows开机启动)，场景:启动程序时启动一个公告...
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <!-- 写入SD卡
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- 获取手机振动
+    <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <!-- 获取当前位置 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!-- wifi热点获取热点位置
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.saasapp.ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.saasapp.ui.FrameActivity" />
+        <activity android:name="com.saasapp.ui.GuideActivity" />
+        <activity android:name="com.saasapp.ui.IndexActivity" />
+        <activity android:name="com.saasapp.ui.MeActivity" />
+        <activity android:name="com.saasapp.ui.SearchActivity" />
+        <activity android:name="com.saasapp.ui.HelpActivity" />
+        <activity android:name="com.saasapp.ui.RegionActivity" />
+        <activity android:name="com.saasapp.ui.register.TodayRegisterActivity" />
+        <activity android:name="com.saasapp.ui.register.DeptListActivity" />
+        <activity android:name="com.saasapp.ui.register.MyDocListActivity" />
+        <activity android:name="com.saasapp.ui.register.RegTimeActivity" android:theme="@style/dialog"/>
+    	<activity android:name="com.saasapp.ui.register.RegConfirmActivity" />
+    </application>
+
+</manifest>

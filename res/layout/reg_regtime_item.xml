@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    style="@style/padding20" >
+
+    <TextView
+        android:id="@+id/reg_regtime_period"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/reg_regtime_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/reg_regtime_surplus"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_weight="1.7"
+        android:gravity="center"
+        android:background="@drawable/my_blue_background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+	
+</LinearLayout>

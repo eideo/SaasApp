@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- APP信息 -->
+    <string name="app_name">银医(android)</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- frame框架 -->
+    <string name="home">首页</string>
+    <string name="me">个人中心</string>
+    <string name="search">发现</string>
+    <string name="help">帮助</string>
+    <string name="animation_title"></string>
+    <string name="guide_btn">加入银医在线</string>
+    <string name="index_menu_item1">清除引导缓存</string>
+    <!-- 首页 -->
+    <string name="index_title">银医通</string>
+    <string name="changehospital">切换医院</string>
+    <string name="index_reg_today">当天挂号</string>
+    <string name="index_reg_book">预约挂号</string>
+    <string name="index_reg_rem">远程问诊</string>
+    <string name="index_reg_smart">智能导诊</string>
+    <string name="index_mzjf">门诊缴费</string>
+    <string name="index_zyyj">住院押金</string>
+    <string name="index_sbyy">社保应用</string>
+    <string name="index_hzrs">侯诊人数</string>
+    <string name="index_yyjs">医院介绍</string>
+    <string name="index_ksfb">科室分布</string>
+    <string name="index_ylzx">医疗咨询</string>
+    <string name="index_hdjl">互动交流</string>
+    <string name="index_ypyj">药品药价</string>
+
+    <!-- 发现 -->
+    <string name="search_individual">个人</string>
+    <string name="search_notice">公告</string>
+    
+    <!-- 个人中心 -->
+    <string name="myself_center">个人中心</string>
+    <string name="myself_accounts">当前帐号:</string>
+    <string name="myself_info">就诊对象:</string>
+    <string name="myself_hospital">所在医院:</string>
+    <string name="myself_reset_password">重置密码</string>
+    <string name="myself_change_info">切换对象</string>
+    <string name="myself_reg_record">挂号记录</string>
+    <string name="myself_book_record">预约记录</string>
+    <string name="myself_pay_record">我的缴费</string>
+    <string name="myself_deposit_record">我的押金</string>
+    <string name="myself_doc">我的医生</string>
+    <string name="myself_report">我的报告</string>
+    <string name="myself_setting">设置</string>
+    <!-- 帮助 -->
+	<string name="help_title">帮助</string>
+	
+    <!-- 医院选择 -->
+    <string name="select_region">选择地区</string>
+    <string name="select_hospital">选择医院</string>
+<!-- 挂号start -->
+    <!-- 当天挂号 -->
+    <string name="todayreg_hint">请输入医生姓名或科室名称</string>
+    <string name="todayreg_selectdept">按照科室找医生</string>
+    <string name="todayreg_mydoc">我的医生</string>
+    <string name="todayreg_prompt">1.实名挂号,需要绑定就诊人信息。\n2.请使用银联卡支付挂号费。\n3.如需退号,请凭"电子凭条"到医院人工窗口办理。</string>
+    <!-- 科室列表 -->
+    <string name="reg_deptlist_title">科室列表</string>
+    <!-- 我的医生 -->
+    <string name="reg_mydoc_title">我的医生</string>
+    <string name="reg_mydoc_todayreg">当班挂号</string>
+    <string name="reg_mydoc_bookreg">预约挂号</string>
+    <string name="reg_mydoc_delete">取消收藏</string>
+    <!-- 挂号确认 -->
+    <string name="reg_regconfirm_deptname">门诊名称</string>
+    <string name="reg_regconfirm_regamt">挂号费用</string>
+    <string name="reg_regconfirm_visittime">就诊时间</string>
+    <string name="reg_regconfirm_currentaccount">当前帐号</string>
+    <string name="reg_regconfirm_patname">姓名</string>
+    <string name="reg_regconfirm_changepat">选择就诊对象</string>
+<!-- 挂号end -->
+    <!-- 下拉刷新头 -->
+	<string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">释放立即刷新</string>
+	<string name="refreshing">正在刷新…</string>
+	<string name="not_updated_yet">暂未更新过</string>
+	<string name="updated_at">上次更新于%1$s前</string>
+	<string name="updated_just_now">刚刚更新</string>
+	<string name="time_error">时间有问题</string>
+    <!-- 公共 -->
+    <string name="common_loadingtext">加载中...</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_return">返回</string>
+	<string name="common_logout">注销</string>
+	<string name="common_search">搜索</string>
+	<string name="common_cancel">取消</string>
+	
+	
+</resources>

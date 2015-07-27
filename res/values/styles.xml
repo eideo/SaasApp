@@ -1,0 +1,95 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="mainTabs_radio">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5.0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="ui_me">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:paddingLeft">20.0dp</item>
+        <item name="android:paddingRight">10.0dp</item>
+        <item name="android:paddingTop">5.0dp</item>
+        <item name="android:paddingBottom">5.0dp</item>
+    </style>
+
+    <style name="padding20">
+        <item name="android:paddingLeft">30.0dp</item>
+        <item name="android:paddingRight">20.0dp</item>
+        <item name="android:paddingTop">10.0dp</item>
+        <item name="android:paddingBottom">10.0dp</item>
+    </style>
+
+    <style name="padding10">
+        <item name="android:paddingLeft">20.0dp</item>
+        <item name="android:paddingRight">10.0dp</item>
+        <item name="android:paddingTop">3.0dp</item>
+        <item name="android:paddingBottom">3.0dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@color/gray</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 这两个属性不加上顶部会出现阴影 -->
+        <item name="android:windowActionModeOverlay">true</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+    </style>
+
+    <style name="reg_regconfirm_table_attr">
+        <item name="android:paddingLeft">8.0dp</item>
+        <item name="android:paddingRight">8.0dp</item>
+        <item name="android:paddingTop">3.0dp</item>
+        <item name="android:paddingBottom">3.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="reg_regconfirm_table_row">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+	
+    <style name="common_item_line">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2.0dp</item>
+        <item name="android:background">@drawable/index_menu_item_line</item>
+    </style>
+
+</resources>

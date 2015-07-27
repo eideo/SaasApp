@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/azure" >
+
+        <Button
+            android:id="@+id/reg_regconfirm_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/common_return"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reg_regconfirm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+    <com.saasapp.tools.ReboundScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/my_background_stroke"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/reg_regconfirm_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/no_doc" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_doctitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/gray1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm__introduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="4"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow style="@style/reg_regconfirm_table_row" >
+
+                        <TextView
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="left"
+                            android:text="@string/reg_regconfirm_deptname"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_deptname"
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="right"
+                            android:textColor="@color/gray1" />
+                    </TableRow>
+
+                    <View style="@style/common_item_line" />
+
+                    <TableRow style="@style/reg_regconfirm_table_row" >
+
+                        <TextView
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="left"
+                            android:text="@string/reg_regconfirm_regamt"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_regamt"
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="right"
+                            android:textColor="@color/gray1" />
+                    </TableRow>
+
+                    <View style="@style/common_item_line" />
+
+                    <TableRow style="@style/reg_regconfirm_table_row" >
+
+                        <TextView
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="left"
+                            android:text="@string/reg_regconfirm_visittime"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_visittime"
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="right"
+                            android:textColor="@color/gray1" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_background_stroke"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow style="@style/reg_regconfirm_table_row" >
+
+                        <TextView
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="left"
+                            android:text="@string/reg_regconfirm_currentaccount"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/reg_regconfirm_currentaccount"
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="right"
+                            android:textColor="@color/gray1" />
+                    </TableRow>
+
+                    <View style="@style/common_item_line" />
+
+                    <TableRow style="@style/reg_regconfirm_table_row" >
+
+                        <TextView
+                            style="@style/reg_regconfirm_table_attr"
+                            android:layout_gravity="left"
+                            android:text="@string/reg_regconfirm_patname"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/reg_regconfirm_changepat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/my_white_gray2"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/reg_regconfirm_changepat"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reg_regconfirm_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/my_blue_deongaree"
+                android:text="@string/common_confirm"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.saasapp.tools.ReboundScrollView>
+
+</LinearLayout>
